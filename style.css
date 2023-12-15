@@ -1,0 +1,232 @@
+body h1 h2 ul li a{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+header {
+	position: fixed;
+	text-align: center;
+	background-color: #31a32f;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+	left: 1;
+}
+header h1 {
+	color: white;
+	border: 4px solid white;
+	padding: 2px 6px;
+	display: inline-block;
+	margin: 10px;
+	font-size: 25px;
+	border-radius: 20%;
+
+}
+.banner {
+	position: relative;
+}
+.banner img {
+	max-width: 100%;
+}
+.banner .welcome {
+	position: absolute;
+	border: 4px solid #3eb5d6;
+	margin: 0;
+	top: 25%;
+	left: 25%;
+}
+.banner h1 {
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	padding: 2px 8px;
+	margin: 4px;
+}
+.banner span {
+	color: white;
+	font-size: 1.3em;
+}
+.banner .intro {
+	position: absolute;
+	font-size: 20px;
+	font-style: bold;
+	top: 55%;
+	left: 20px;
+	
+}
+.banner p{
+	color: white;
+	padding: 0 150px;
+	text-align: center;
+}
+nav {
+	background-color: #4deaea;
+	padding: 10px;
+	position: sticky;
+	top: 60px;
+}
+nav ul {
+	white-space: nowrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+nav li {
+	width: 25%;
+	display: inline-block;
+	font-size: 25px;
+}
+nav li:hover {
+	text-decoration: underline;
+}
+section p::selection {
+	background-color: red;
+	color: white;
+}
+main {
+	max-width: 100%;
+	
+	padding: 0 50px;
+	margin: 80px auto;
+	box-sizing: border-box;
+}
+
+section h2 {
+	color: #f63232;
+	font-size: 40px; 
+}
+section p {
+	line-height: 2em;
+	font-size: 20px;
+	color: #4b4b4b;
+}
+article h2 {
+	text-decoration: underline;
+	text-align: center;
+	color: #f63232;
+	font-size: 40px;
+}
+article p {
+	line-height: 2em;
+	font-size: 20px;
+	color: #4b4b4b;
+}
+article p::first-letter {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.skillsection {
+	line-height: 2em;	
+}
+.skillsection .skilltitle {
+	font-size: 30px;
+}
+.skillsection .points {
+	line-height: 2em;
+	font-size: 20px;
+	color: #4b4b4b;
+}
+.imagear {
+	text-align: center;
+	margin: 60px 0;
+}
+.imagear li {
+	display: inline-block;
+	width: 40%;
+	margin: 15px;
+}
+.imagear li img {
+	width: 100%;
+}
+.imagear li:hover {
+	position: relative;
+	top :-4px;
+}
+.articlepara {
+	
+}
+.skillpara {
+	
+}
+.educationpara {
+	
+}
+.passionpara {
+	
+}
+form {
+	text-align: center;
+
+}
+form input {
+	margin: 10px 0;
+	padding: 10px 20px;
+		border-style: all;
+}
+form input:hover {
+	position: relative;
+	top :-4px;
+}
+form input:focus {
+	border: 2px solid #4b4b4b;
+	outline: none;
+}
+form input:valid {
+	border: 2px solid green;
+}
+footer {
+	background-color: green;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 1000px){
+
+	.banner .welcome h1 {
+		font-size: 40px;
+	}
+	.intro p {
+		font-size: 15px;
+	}
+	nav li{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.banner .welcome h1 {
+		font-size: 30px;
+	}
+	.intro p {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 650px) {
+	.banner .welcome h1{
+		text-align: center;
+		font-size: 25px;
+	}
+	.intro p {
+		left: 5px;
+		font-size: 10px;
+	}
+	.banner .welcome span {
+		font-size: 1em;
+	}
+	.imagear li {
+		width:100%;
+		margin: 20px auto;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	nav li {
+		font-size: 20px;
+		display: block;
+		width: 100%;
+		margin: 20px 0;
+	}
+}
